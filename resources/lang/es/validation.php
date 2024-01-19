@@ -150,7 +150,9 @@ return [
         'name'     => 'nombre',
         'email'    => 'correo electronico',
         'subject'  => 'asunto',
-        'content'  => 'contenido'
+        'content'  => 'contenido',
+        'image'    => 'imagen',
+        'category_id'  =>  'categoría'
     ],
 
 ];

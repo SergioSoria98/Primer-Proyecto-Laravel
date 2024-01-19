@@ -4,21 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Project extends Model
+class Category extends Model
 {
-    use SoftDeletes;
-
-    protected $guarded = [];
-
     public function getRouteKeyName()
     {
         return 'url';
     }
 
-    public function category()
+    public function projects()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Project::class);
     }
 }
