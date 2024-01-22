@@ -2,7 +2,7 @@
     <head>
         <title>@yield('title')</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="/css/app.css"/>
         <script src="/js/app.js" defer></script>
         <style>
             .active a{
